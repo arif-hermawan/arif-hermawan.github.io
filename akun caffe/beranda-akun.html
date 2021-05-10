@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+        <!-- Slick css -->
+        <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>   
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+        <!-- global css -->
+        <link rel="stylesheet" href="/global code/style.css">
+
+        <!-- roboto google font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+    <title>Cofee Place</title>
+  </head>
+  <body>
+
+<!-- global container, ukuran untuk semua page -->
+<div class="c-global-container">
+    <div class="global-container">
+
+
+<!-- 1 -->
+        <div class="beranda-akun">
+<div class="header-beranda-akun">
+    <!-- foto dan nama caffe -->
+    <div class="profil-caffe">
+        <div type="button" class="foto-caffe" data-toggle="modal" data-target="#modal-foto">
+            <img src="/data-gambar/coffe-place/profil/coffePlace.svg" alt="foto profil">
+          </div>
+        <div class="namaAlamat-caffe">
+            <h4 class="nama text-dark">
+                Coffe Place
+            </h4>
+            <p class="alamat text-secondary">
+                Jl.Malikul Saleh
+            </p>
+        </div>
+    </div>
+
+
+<!-- modal foto profil -->
+  <div class="modal fade modal-foto" id="modal-foto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="exampleModalLabel">Coffe Place</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="/data-gambar/coffe-place/profil/coffePlace.svg" alt="foto profil">
+        </div>
+        <div class="modal-footer">
+            <button type="button " class="btn tombol-editProfil btn-primary">              
+                <span class="text-white ">Edit Profil</span>
+            </button>
+
+          </div>
+      </div>
+    </div>
+  </div>
+<!-- END foto dan nama caffe -->
+
+<!-- Hamburger Menu -->
+<div class="dropdown dropleft hamburger">
+  <button class="btn  btn-hamburger" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22 9H2" stroke="#6C757D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22 2H2" stroke="#6C757D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22 16H2" stroke="#6C757D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      
+  </button>
+  <!-- dropdown hamburger -->
+  <div class="dropdown-menu hamburger-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Dasboard</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+<!-- END Hamburger Menu -->
+</div>
+<!-- END header beranda akun -->
+
+
+
+<!-- 2 -->
+<!-- pencarian-->
+<div class="A-pencarian">
+  <div class="c-pencarian">
+  <div class="search">
+    <input type="search" id="" class="pencarian-primary" placeholder="Cari Menu"
+    aria-label="Search"/>
+</div>
+ 
+      <div class="icon-pencarian">
+        <button type="button" class="btn btn-pencarian">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19 19L14.65 14.65" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+      </div>
+  </div>
+</div>
+
+<!-- END pencarian -->
+
+
+
+
+<!-- 3 -->
+<!-- Menu special hari ini -->
+<div class="A-menu-spesial">
+<h5 class="text-judul-teal">Menu Special Hari ini</h5>
+<div class="menu-special-admin">
+    <!-- tambah menu -->
+  <div class="add-menu">
+    <button type="button" data-toggle="modal" data-target="#modal-tambah-Mspesial" class="btn btn-add">
+      <img src="/icon/add.svg" alt="">
+    </button>
+    </div>
+
+    <!-- modal tambah menu spesial -->
+    <div class="modal fade" id="modal-tambah-Mspesial" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Tambahkan Menu Spesial</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <!-- pilih gambar -->
+            <div class="c-pilih-gambar">
+                <form action="#">
+                    <div class="input-file-container">
+                        <input class="input-file" id="my-file" type="file">
+                        <label tabindex="0" for="my-file" class="input-file-trigger"><p class="">
+                            <img src="/icon/add.svg" height="14" alt=""><span>
+                                Pilih Gambar
+                            </span> 
+                        </p></label>
+                    </div>
+                    <p class="file-return"></p>
+                </form>
+            </div>
+              <!-- masukkan nama dan harga -->
+              <div class="c-input-nama">
+              <div class="input-nama">
+                <label for="exampleFormControlInput1" class="text-secondary">Nama Menu</label>
+                <input class="form-control" type="text" placeholder="Tulis Disini">
+              </div>
+              <div class="input-harga">
+                <label for="exampleFormControlInput1" class="text-secondary">Harga</label>
+                <input class="form-control" type="text" placeholder="Tulis Disini">
+              </div>
+            </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+  <!-- list menu spesial -->
+  <div class="menu-spesial">
+
+    <!-- item menu spesial -->
+      <div class="modal-Mspesial" data-toggle="modal" data-target="#menu-spesial" style="background-image: url(/data-gambar/coffe-place/menuSpesial/coffe\ late.jpg);">
+      </div>
+    <!-- end item --> 
+
+        <!-- item menu spesial -->
+        <div class="modal-Mspesial" data-toggle="modal" data-target="#menu-spesial-2" style="background-image: url(/data-gambar/coffe-place/menuSpesial/coffe\ late.jpg);">
+        </div>
+      <!-- end item --> 
+
+
+          <!-- item menu spesial -->
+          <div class="modal-Mspesial" data-toggle="modal" data-target="#menu-spesial" style="background-image: url(/data-gambar/coffe-place/menuSpesial/coffe\ late.jpg);">
+          </div>
+        <!-- end item --> 
+
+            <!-- item menu spesial -->
+      <div class="modal-Mspesial" data-toggle="modal" data-target="#menu-spesial" style="background-image: url(/data-gambar/coffe-place/menuSpesial/coffe\ late.jpg);">
+      </div>
+    <!-- end item --> 
+
+
+
+</div>
+    <!-- END item menu spesial -->
+  <!-- Modal menu spesial -->
+<div class="modal fade" id="menu-spesial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="cba">
+          <h5 class="nama-spesial-modal" id="exampleModalLabel">Coffe Latte</h5>
+          <p class="harga-spesial-modal">Rp.20000</p>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="/data-gambar/coffe-place/menuSpesial/3.jpg" alt="" class="img-fluid gambar-menu-spesial">
+      </div>
+      <div class="modal-footer modal-footer-Mspesial1">
+        <button type="button" class="btn btn-lg btn-secondary btn-delete">
+          <p class="p-icon"><img src="/icon/delete.svg" alt=""><span>
+            Hapus
+          </span></p>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="menu-spesial-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="cba">
+          <h5 class="nama-spesial-modal" id="exampleModalLabel">Coffe Latte</h5>
+          <p class="harga-spesial-modal">Rp.20000</p>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="/data-gambar/coffe-place/menuSpesial/2.jpg" alt="" class="img-fluid gambar-menu-spesial">
+      </div>
+      <div class="modal-footer modal-footer-Mspesial1">
+        <button type="button" class="btn btn-lg btn-secondary btn-delete">
+          <p class="p-icon"><img src="/icon/delete.svg" alt=""><span>
+            Hapus
+          </span></p>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+    </div>
+<!-- END menu spesial -->
+
+
+<!-- 4 -->
+<!-- all menu -->
+<!-- filter menu -->
+<div class="filter-dan-menu">
+  <h5 class="text-judul-teal">Menu Coffe Place</h5>
+<div class="filter-menu">
+
+  <button class="btn btn-filter-menu active">All</button>
+  <button class="btn btn-filter-menu">Coffee</button>
+  <button class="btn btn-filter-menu">Cemilan</button>
+  <button class="btn btn-filter-menu">Ice Cream</button>
+  <button class="btn btn-filter-menu">Makanan</button>
+  <button class="btn btn-filter-menu">Minuman</button>
+
+
+</div>
+
+
+<!-- card menu -->
+<div class="c-card-menu">
+<div id="accordion" class="card-menu">
+
+  <!-- Menu -->
+  <div class="card">
+    <div class="card-header" id="heading1">
+        <button class="btn btn-card-menu" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+         <div class="click-card">
+            <div class="gambar-menu-demo" style="background-image: url(/data-gambar/coffe-place/menuSpesial/3.jpg);">
+              
+            </div>
+            <div class="nama-harga-menu">
+                <p class="nama-menu">Coffe Latte</p>
+                <p class="harga-menu h6 text-secondary"><span class="text-primary">Rp.</span>12.000</p>
+            </div>
+         </div>
+        </button>
+    </div>
+  <!-- Body Menu -->
+    <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+
+        <div class="foto-menu">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- END Menu -->
+
+
+  <!-- Menu -->
+  <div class="card">
+    <div class="card-header" id="heading2">
+        <button class="btn btn-card-menu" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+         <div class="click-card">
+            <div class="gambar-menu-demo" style="background-image: url(/data-gambar/coffe-place/menuSpesial/3.jpg);">
+              
+            </div>
+            <div class="nama-harga-menu">
+                <p class="nama-menu">Coffe Latte</p>
+                <p class="harga-menu h6 text-secondary"><span class="text-primary">Rp.</span>12.000</p>
+            </div>
+         </div>
+        </button>
+    </div>
+  <!-- Body Menu -->
+    <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- END Menu -->
+
+
+  
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+    </div>
+    <!-- end global container -->
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <!--slick js (slick js) -->
+     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+       <!-- global js -->
+    <script src="/global code/script.js"></script>
+  </body>
+</html>
