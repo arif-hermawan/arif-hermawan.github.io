@@ -59,6 +59,7 @@ $('.menu-spesial').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     dots: false,
+    arrows:false,
   });
 
 //   slick filter
@@ -67,4 +68,5 @@ $('.filter-menu').slick({
     infinite: false,
     speed: 200,
     slidesToShow: 4,
+    arrows:false,
   });
