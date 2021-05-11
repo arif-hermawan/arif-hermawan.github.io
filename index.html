@@ -8,13 +8,255 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <link rel="shortcut icon" href="/index-material/picture/favicon.ico">
+    <title>Arif Hermawan</title>
   </head>
-  <body>
 
 
-    <a class="btn btn-primary" href="/akun caffe/beranda-akun.html" role="button">Link</a>
+<div class="jumbotron">
+  <!-- foto -->
+    <div class="intro">
+      <div class="img">
+        <img src="/index-material/picture/personal.svg" alt="">
+      </div>
+    </div>
+    <!-- nama dan profesi -->
+    <div class="name">
+      <h5 class="text-secondary font-weight-bold">Hai! Saya</h5>
+      <h1 class="text-primary font-weight-bold">Arif Hermawan</h1>
+      <p class="text-secondary">UX Designer, FrontEnd Develover <span class="font-weight-bold">(pemula😅)</span></p>
+    </div>
 
+    <!-- sosial media -->
+    <div id="accordion" class="acc">
+      <div class="card card-acc">
+        <div class="card-header-acc" id="headingOne">
+     
+            <button class="btn btn-click" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             <p class="text-secondary">Kontak (Klik👆)</p> 
+            </button>
+     
+        </div>
+    
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body card-body-acc">
+            <p class="text-secondary">💌  arif-hermawan@hotmail.com</p>
+            <div class="logo-sosialmedia">
+           <a href="https://twitter.com/Arifhermawan_s" target="_blank">
+            <img src="/index-material/icon/twitter.svg" height="28" alt="logo twitter">
+           </a>   
+           <a href="https://www.instagram.com/arifhermawan.s/" target="_blank">
+            <img src="/index-material/icon/instagram.svg" height="28" alt="logo instagram">
+           </a>
+           <a href="https://github.com/arif-hermawan" target="_blank">
+            <img src="/index-material/icon/github.svg" height="28" alt="logo github">
+           </a>      
+            </div>
+            <a class="btn btn-wa btn-primary" href="" role="button">
+              📨 Hubungi Via (WhatsApp)
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <!-- catatan -->
+      <div class="card card-acc">
+        <div class="card-header-acc" id="headingTwo">
+            <button class="btn btn-click" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               <p class="text-secondary">Catatan (Klik👆)</p>
+            </button>
+
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <p>
+              <a href="/index-material/catatan.html">tentang</a> / <a href="/index-material/catatan.html">catatan</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+    <!-- project on working -->
+    <div class="c-project container">
+    <div class="project-container">
+      <!-- project tahap perilisan -->
+      <h3 class="font-weight-bold text-secondary">Project</h3>
+      <p class="text-primary font-weight-bold sub-judul">Tahap Perilisan</p>
+      <div class="c-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title text-primary font-weight-bold">privataja.com</h4>
+              <img class="card-img" src="/index-material/picture/privataaja-card.svg" alt="">
+              <p class="card-text mt-3">PrivatAja.com adalah sebuah layanan yang mempertemukan mahasiswa berkualitas yang sudah diberikan pelatihan untuk menjadi guru privat.</p>
+              <a href="#" class="card-link">Kunjungi website</a>
+            </div>
+          </div>
+
+      </div>
+</div>
+<!-- end project tahap perilisan -->
+
+<!-- project tahap pembuatan -->
+<div class="project-container">
+  <h3 class="font-weight-bold text-secondary">Project</h3>
+  <p class="text-primary font-weight-bold sub-judul">Tahap Pembuatan</p>
+  <div class="c-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title text-primary font-weight-bold">Menu Caffe</h4>
+          <img class="card-img" src="/index-material/picture/no-pics.svg" alt="">
+          <p class="card-text mt-3">Caffe menu baru sampai proses (5%), saya akan lampirkan jika proses sudah mencapai 10-20%</p>
+          <!-- <a href="#" class="card-link">Kunjungi website</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- project tahap perilisan -->
+
+
+
+</div>
+<!-- END Project on working -->
+
+
+
+
+
+
+
+    <!-- CSS -->
+    <style>
+      *{ 
+        letter-spacing: 1px;
+      }
+      .container{
+        padding:50px;
+      }
+      .text-primary{
+        color: #257A9F !important;
+      }
+      .jumbotron{
+        background-color: white;
+      }
+      .intro{
+        display: flex;
+        margin-top: 40px;
+      }
+      .img{
+        margin: auto;
+      }
+      .name{
+        margin-top: 20px;
+        text-align: center;
+      }
+      .name p{
+        margin-top: -4px;
+      }
+
+      /* card */
+      .c-project{
+        margin-top: 30px;
+      }
+      .project-container{
+        margin-top: 30px;
+      }
+      .sub-judul{
+        margin-top: -5px;
+      }
+      .c-card{
+        margin-top: -10px;
+        display: flex;
+        /* justify-content: center; */
+        flex-wrap: wrap;
+      }
+      .card{
+        width: 320px;
+        margin: 20px;
+      }
+      .card-link{
+        float: right;
+      }
+
+      /* accordion */
+      .acc{
+        
+      }
+      .card-acc{
+        display: flex;
+        margin: 5px auto;
+      }
+      .card-header-acc{
+        width: 318px;
+        padding: 1px;
+        margin: auto;
+      }
+      .btn-click{
+        width: 100%;
+      }
+      .btn-click p{
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+       .btn:focus{
+        box-shadow: none !important;
+      }
+      .btn-primary{
+        background-color: #257A9F;
+      }
+      .btn-primary:hover{
+        background-color: #1b688a;
+      }
+      .btn-wa{
+        margin-top: 50px;
+        width: 100%;
+        padding: 10px 20px;
+      }
+
+      /* acc sosial media */
+      .logo-sosialmedia{
+        padding: 5px 5px;
+      }
+      .logo-sosialmedia a{
+        margin: 0 5px;
+      }
+      .logo-sosialmedia a:hover{
+        text-decoration:none ;
+      }
+    
+      /* sosial media */
+
+
+
+
+
+
+
+
+      /* breakpoint */
+      @media (max-width: 770px) {
+        .container{
+          padding: 20px;
+        }  
+        .c-card{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    
+      }
+
+
+    </style>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

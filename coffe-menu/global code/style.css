@@ -1,0 +1,419 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+
+/* ukuran global */
+.c-global-container{
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 100%;
+}
+.global-container{
+    background-color: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    height: 3000px;
+}
+/* END ukuran global */
+
+/* header profil caffe */
+.header-beranda-akun{
+    display: grid;
+    grid-template-areas: 
+    'foto-nama hamburger'
+    ;
+    
+}
+    /* foto profil */
+.profil-caffe{
+    display: flex;
+}
+
+.foto-caffe{
+    height: 60px;
+    width: 60px;
+    background-color: #f59042;
+    border-radius: 10px;
+    display: flex;
+}
+.foto-caffe img{
+    margin: auto;
+    cursor: pointer;
+}
+    /* END foto profil  */
+
+    /* nama dan alamat caffe */
+.namaAlamat-caffe{
+    margin-left: 12px;
+    margin-top: 5px;
+}
+.namaAlamat-caffe .nama{
+    font-size: 20px;
+    font-weight: 500;
+}
+.namaAlamat-caffe .alamat{
+    margin-top: -5px;
+    font-size: 16px;
+}
+    /* END nama caffe */
+
+    /* hamburger menu */
+    .btn-hamburger{
+        background-color: white;
+        float: right !important; 
+    }
+  
+    .hamburger-menu{
+        background-color: red;
+    }
+    /* END Hamburger Menu */
+
+
+    
+/* 3 */
+/* Menu spesial admin */
+.A-menu-spesial{
+    margin-top: 25px;
+    color: teal;
+    font-size: 18px;
+}
+.menu-special-admin{
+   margin-top: 15px;
+   display: grid;
+   grid-template-areas: 
+   'add menu'
+   ;
+   grid-template-columns:20% 80%;
+}
+.add-menu{
+    display: flex;
+}
+.btn-add{
+    background-color: white !important;
+    width: 100px;
+    border:2px dashed #8E8E8E;
+    border-radius: 5px;
+    height: 140px;
+}
+
+
+/* list menu spesial */
+.menu-spesial{
+    padding: 0 10px;
+    margin-left: 10px;
+    /* background-color: red; */
+}
+.modal-Mspesial{
+    height: 140px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+.modal-Mspesial:hover{
+    
+}
+.btn-delete p{
+    color: #C50000;
+}
+
+
+/* modal tambah menu spesial */
+.input-file-container {
+    display: flex;
+   } 
+   .input-file-trigger {
+     margin: auto;
+     width: 100%;
+     display: block;
+     padding: 20px;
+     border:2px dashed #8E8E8E;
+     border-radius: 5px;
+     font-size: 1em;
+     transition: all .4s;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: 600;
+     color: #8E8E8E;
+   }
+   .input-file-trigger:hover{
+    background-color: #ececec;
+   }
+    .input-file-trigger img{
+       margin-top: -3px;
+   }
+    .input-file-trigger p{
+       margin: auto;
+   }
+    .input-file {
+     position: absolute;
+     top: 0; left: 0;
+     width: 225px;
+     opacity: 0;
+     padding: 14px 0;
+     cursor: pointer;
+   }
+
+   
+   .file-return {
+     margin: 0;
+   }
+   .file-return:not(:empty) {
+     margin: 1em 0;
+   }
+   .file-return {
+     font-style: italic;
+     font-size: .9em;
+     font-weight: bold;
+   }
+   .file-return:not(:empty):before {
+     content: "Selected file: ";
+     font-style: normal;
+     font-weight: normal;
+   }
+   
+  .c-pilih-gambar form {
+     margin: 0 auto;
+     text-align:center;
+   }
+
+   .c-input-nama{
+       margin-top: 40px;
+   }
+   .input-harga{
+       margin-top: 20px;
+   }
+   
+/* END modal tambah menu spesial */
+
+/* END list menu spesial admin */
+
+/* filter dan menu */
+.filter-dan-menu{
+    margin-top: 30px;
+}
+/* filter */
+   .filter-menu{
+    padding: 4px 0;
+   }
+   .btn-filter-menu{
+       /* background-color: blue; */
+       margin: auto 3px !important;
+       border: 1px solid #8E8E8E;
+       background-color: white;
+       border-radius: 4px;
+       color: #343A40;
+       text-align: center;
+   }
+
+   .item-filter-menu .active, .item-filter-menu:hover{
+        background-color: blue;
+   }
+/* end filter */
+
+/* Menu */
+.card{
+    margin-top: 10px;
+}
+.card-header{
+    padding: 1px 1px;
+}
+.btn-card-menu{
+    width: 100%;
+    background-color: white;
+}
+.c-card-menu{
+    margin-top: 20px;
+}
+.card-menu{
+    margin-top: 10px;
+}
+.click-card{
+    display: flex;
+    width: 100% !important;
+}
+.gambar-menu-demo{
+    height: 70px;
+    width: 70px;
+    background-size:cover;
+    border-radius: 4px;
+}
+.nama-harga-menu{
+    margin-left: 10px;
+    text-align: left;
+}
+.nama-harga-menu .nama-menu{
+    font-size: 20px;
+    font-weight: 600;
+    color: #343A40;
+}
+.nama-harga-menu .harga-menu{
+    margin-top: -10px;
+}
+
+/* END menu */
+/* END filter dan menu */
+
+/* global-css */
+
+/* modal global */
+.modal{
+    padding: 0 10px;
+}
+/* modal untuk foto */
+.modal-foto{
+    text-align: center;
+}
+.modal-header{
+    border-bottom: none;
+}
+.tombol-editProfil{
+    width: 100%;
+}
+/* END modal untuk foto */
+
+/* modal untuk menu spesial */
+    .nama-spesial-modal{
+        font-size: 20px;
+    }
+    .harga-spesial-modal{
+        font-size: 16px;
+        margin-top: -8px;
+        color: #8E8E8E;
+    }
+    .gambar-menu-spesial{
+        margin-top: -35px;
+    }
+    .btn-secondary svg{
+        margin-top: 2px !important;
+    }
+/* END modal untuk menu spesial */
+
+
+/* tombol */
+.btn:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.btn-lg{
+    height: 45px !important;
+    font-size: 18px !important;
+}
+.btn-primary{
+    background-color: teal !important;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: rgb(1, 105, 105) !important;
+}
+.btn-secondary{
+    background-color: #dadada;
+    border: none;
+    color: #343A40;
+}
+.btn-secondary:hover{
+    background-color: #bbbbbb;
+    color: #343A40;
+}
+.btn-secondary:active{
+    background-color: rgb(182, 182, 182) !important;
+}
+.btn-3{
+    background-color: white !important;
+    color: rgb(0, 128, 128);
+}
+.btn-3:hover{
+    background-color: #dddddd !important;
+}
+.p-icon span{
+    margin-left: 4px !important;
+}
+.p-icon img{
+    margin-top: -4px;
+}
+/* end tombol */
+
+
+/* pencarian */
+.A-pencarian{
+    display: flex;
+    padding: 10px 0;
+}
+.c-pencarian{
+    display: grid;
+    grid-template-areas: 
+    'pencarian icon'
+    ;
+    grid-template-columns:90% 8%;
+    gap: 5px;
+    width: 95%;   
+    border-radius: 5px;
+    margin: auto;
+    padding: 1px;
+    justify-content: center;
+    border: solid 1px #8E8E8E;
+}
+.btn-pencarian{
+    float: right;
+    margin-top: 2px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    background-color: white !important;
+}
+.btn-pencarian:hover{
+    background-color: none !important;
+}
+.btn-pencarian svg{
+    margin:auto;
+    margin-top: 4px;
+}
+.btn-pencarian svg{
+    stroke: #8E8E8E;
+}
+.pencarian-primary{
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    width: 100%;
+}
+.pencarian-primary:focus{
+    outline: none;
+}
+
+
+
+/* slick css */
+.slick-dots li.slick-active button:before {
+    color: teal !important;
+
+}
+.slick-dots{
+    right: 120px;
+    top: 140px;
+}
+
+/* background color */
+.bg-teal{
+    background-color: teal !important;  
+}
+.active{
+    background-color: teal !important;
+    color: white !important;
+}
+
+/* text */
+.text-judul-teal{
+    color: teal;
+    font-size: 20px;
+}
+.text-primary{
+    color: teal !important;
+}
