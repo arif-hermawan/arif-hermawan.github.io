@@ -11,6 +11,33 @@
     <link rel="shortcut icon" href="/index-material/picture/favicon.ico">
     <title>Arif Hermawan</title>
   </head>
+<body>
+
+  <!-- header -->
+  <div class="header container">
+
+    <div class="darkmode-btn">
+      <p class="text-color-2 font-weight-bold">Pilih Tema</p>
+      <button type="button" class="btn btn-dark" onclick="setDarkMode(true)">🌝</button>
+      <button type="button" class="btn btn-white" onclick="setDarkMode(false)">🌞</button>
+    </div>
+    <style>
+      .darkmode-btn{
+        text-align: center;
+        float: right;
+        position: relative;
+      }
+      .darkmode-btn button{
+        margin-top: -18px;
+      }
+    </style>
+    
+    
+    <!-- <label class="switch" >
+      <input type="checkbox" onclick="myFunction()">
+      <span class="slider round"></span>
+    </label>
+  </div> -->
 
 
 <div class="jumbotron">
@@ -22,9 +49,9 @@
     </div>
     <!-- nama dan profesi -->
     <div class="name">
-      <h5 class="text-secondary font-weight-bold">Hai! Saya</h5>
-      <h1 class="text-primary font-weight-bold">Arif Hermawan</h1>
-      <p class="text-secondary">UX Designer, FrontEnd Developer <span class="font-weight-bold">(pemula😅)</span></p>
+      <h5 class="text-color-2 font-weight-bold">Hai! Saya</h5>
+      <h1 class="text-color-1 font-weight-bold">Arif Hermawan</h1>
+      <p class="text-color-2">UX Designer, FrontEnd Developer <span class="font-weight-bold">(pemula😅)</span></p>
     </div>
 
     <!-- sosial media -->
@@ -32,13 +59,13 @@
       <div class="card card-acc">
         <div class="card-header-acc" id="headingOne">
      
-            <button class="btn btn-click" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-             <p class="text-secondary">Kontak (Klik👆)</p> 
+            <button class="btn btn-click bg-1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             <p class="text-color-3">Kontak (Klik👆)</p> 
             </button>
      
         </div>
     
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div id="collapseOne" class="collapse.show" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body card-body-acc">
             <p class="text-secondary">💌  arif-hermawan@hotmail.com</p>
             <div class="logo-sosialmedia">
@@ -62,8 +89,8 @@
       <!-- catatan -->
       <div class="card card-acc">
         <div class="card-header-acc" id="headingTwo">
-            <button class="btn btn-click" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-               <p class="text-secondary">Catatan (Klik👆)</p>
+            <button class="btn btn-click bg-1" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               <p class="text-color-3">Catatan (Klik👆)</p>
             </button>
 
         </div>
@@ -88,14 +115,14 @@
     <div class="c-project container">
     <div class="project-container">
       <!-- project tahap perilisan -->
-      <h3 class="font-weight-bold text-secondary">Project</h3>
-      <p class="text-primary font-weight-bold sub-judul">Tahap Perilisan</p>
+      <h3 class="font-weight-bold text-color-2">Project</h3>
+      <p class="text-color-1 font-weight-bold sub-judul">Tahap Perilisan</p>
       <div class="c-card">
-          <div class="card">
+          <div class="card bg-1">
             <div class="card-body">
-              <h4 class="card-title text-primary font-weight-bold">privataja.com</h4>
+              <h4 class="card-title text-color-3 font-weight-bold">privataja.com</h4>
               <img class="card-img" src="/index-material/picture/privataaja-card.svg" alt="">
-              <p class="card-text mt-3">PrivatAja.com adalah sebuah layanan yang mempertemukan mahasiswa berkualitas yang sudah diberikan pelatihan untuk menjadi guru privat.</p>
+              <p class="card-text mt-3 text-color-2">PrivatAja.com adalah sebuah layanan yang mempertemukan mahasiswa berkualitas yang sudah diberikan pelatihan untuk menjadi guru privat.</p>
               <a href="https://www.privataja.com/" class="card-link" target="_blank">Kunjungi website</a>
             </div>
           </div>
@@ -106,14 +133,14 @@
 
 <!-- project tahap pembuatan -->
 <div class="project-container">
-  <h3 class="font-weight-bold text-secondary">Project</h3>
-  <p class="text-primary font-weight-bold sub-judul">Tahap Pembuatan</p>
+  <h3 class="font-weight-bold text-color-2">Project</h3>
+  <p class="text-color-1 font-weight-bold sub-judul">Tahap Pembuatan</p>
   <div class="c-card">
-      <div class="card">
+      <div class="card bg-1">
         <div class="card-body">
-          <h4 class="card-title text-primary font-weight-bold">Menu Caffe</h4>
+          <h4 class="card-title text-color-3 font-weight-bold">Menu Caffe</h4>
           <img class="card-img" src="/index-material/picture/no-pics.svg" alt="">
-          <p class="card-text mt-3">Caffe menu baru sampai proses (5%), saya akan lampirkan jika proses sudah mencapai 10-20%</p>
+          <p class="card-text mt-3 text-color-2">Caffe menu baru sampai proses (5%), saya akan lampirkan jika proses sudah mencapai 10-20%</p>
           <!-- <a href="#" class="card-link">Kunjungi website</a> -->
         </div>
       </div>
@@ -130,8 +157,6 @@
 
 
 
-
-
     <!-- CSS -->
     <style>
       *{ 
@@ -139,9 +164,6 @@
       }
       .container{
         padding:50px;
-      }
-      .text-primary{
-        color: #257A9F !important;
       }
       .jumbotron{
         background-color: white;
@@ -244,6 +266,9 @@
 
       /* breakpoint */
       @media (max-width: 770px) {
+        .jumbotron{
+          margin-top: 30px;
+        }
         .container{
           padding: 20px;
         }  
@@ -254,9 +279,144 @@
       }
     
       }
+      
+      /* switch */
+            /* The switch - the box around the slider */
+.header label{
+      float: right;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1b688a;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "🌗";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  text-align: center;
+}
+
+input:checked + .slider {
+  background-color: aliceblue;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.darkmode h4{
+    color: purple;
+}
+      /* end switch */
+      
+
+
+      /* darkmode css set */
+
+      /* white mode */
+      /* text */
+      .text-color-1{
+        color: #1b688a;
+      }
+      .text-color-2{
+        color: rgb(80, 80, 80);
+      }
+      .text-color-3{
+        color: rgb(102, 102, 102);
+      }
+      /* background */
+      .bg-1{
+        background-color: white;
+      }
+
+      /* dark mode */
+      .darkmode{
+        background: #131A2B;
+      }
+      .darkmode .jumbotron{
+        background: #131A2B;
+      }
+      .darkmode .text-color-1 {
+        color: #646BEF;
+      }
+      .darkmode .text-color-2{
+        color: #d6d6d6;
+      }
+      .darkmode .text-color-3{
+        color: #b9b9b9;
+      }
+      /* background */
+      .darkmode .bg-1{
+        background-color: #1E283D;
+      }
 
     </style>
+
+
+<!-- =============================== -->
+    <!-- js -->
+    <script>
+      // localstorange
+      if(localStorage.getItem('theme')== 'dark')
+        setDarkMode(true);
+      // togle dark mode
+      function setDarkMode(isDark){      
+        if(isDark){
+            document.body.setAttribute('class','darkmode')
+            localStorage.setItem('theme','dark')
+        }
+        else{
+            document.body.setAttribute('class','null')
+            localStorage.removeItem('theme')
+        }
+    }
+
+    // save dark mode
+    
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
