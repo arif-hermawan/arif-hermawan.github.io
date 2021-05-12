@@ -57,15 +57,14 @@
     <!-- sosial media -->
     <div id="accordion" class="acc">
       <div class="card card-acc">
-        <center>
+
         <div class="card-header-acc" id="headingOne">
      
-            <button class="btn btn-click bg-1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="btn bg-1 btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
              <p class="text-color-3">Kontak (Klik👆)</p> 
             </button>
      
         </div>
-      </center>
       
         <div id="collapseOne" class="collapse.show" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body card-body-acc">
@@ -81,23 +80,24 @@
             <img src="/index-material/icon/github.svg" height="28" alt="logo github">
            </a>      
             </div>
-            <a class="btn btn-wa btn-primary" href="https://api.whatsapp.com/send?phone=6281262392012&text=Say%20hai%20to%20me" role="button" target="_blank">
-              📨 Hubungi Via (WhatsApp)
+            <a class="btn btn-block btn-primary btn-wa" href="https://api.whatsapp.com/send?phone=6281262392012&text=Say%20hai%20to%20me" role="button" target="_blank">
+             <span >📨 Hubungi Via (WhatsApp)</span>
             </a>
+
             
           </div>
         </div>
       </div>
-      <!-- catatan -->
+      <!-- catatan -->        
       <div class="card card-acc">
-        <center>
+
         <div class="card-header-acc" id="headingTwo">
-            <button class="btn btn-click bg-1" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="btn btn-click bg-1 btn-block" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                <p class="text-color-3">Catatan (Klik👆)</p>
             </button>
 
         </div>
-      </center>
+    
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
           <div class="card-body">
             <p>
@@ -107,7 +107,14 @@
         </div>
       </div>
 
+
     </div>
+    <style>
+      .card-acc{
+    
+        margin: auto;
+      }
+    </style>
 
 
 
@@ -165,6 +172,10 @@
     <style>
       *{ 
         letter-spacing: 1px;
+        /* border: 1px solid red; */
+      }
+      .btn{
+        white-space: normal;
       }
       .container{
         padding:50px;
@@ -204,7 +215,7 @@
         flex-wrap: wrap;
       }
       .card{
-        width: 320px;
+        max-width: 320px;
         margin: 20px;
       }
       .card-link{
@@ -212,20 +223,14 @@
       }
 
       /* accordion */
-      .acc{
-        
-      }
+  
       .card-acc{
         display: flex;
         margin: 5px auto;
       }
-      .card-header-acc{
-        width: 318px;
-        padding: 1px;
-        margin: auto;
-      }
       .btn-click{
-        width: 100%;
+        /* width: 100%; */
+        background-color: ;
       }
       .btn-click p{
         margin-top: 10px;
@@ -244,7 +249,6 @@
       }
       .btn-wa{
         margin-top: 50px;
-        width: 100%;
         padding: 10px 20px;
       }
 
@@ -274,7 +278,7 @@
           margin-top: 30px;
         }
         .container{
-          padding: 20px;
+          padding: 5px;
         }  
         .c-card{
         display: flex;
