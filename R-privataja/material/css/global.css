@@ -1,0 +1,248 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* NAVBAR */
+.menu-active{
+    color: #008E6E !important; 
+}
+.nav-link:focus , .nav-link:active{
+  color: #008E6E !important;
+}
+
+
+/* foto profil di navbar */
+.nav-img-profil{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+@media (max-width : 990px){
+  .nav-img-profil{
+    height: 40px;
+    width: 40px;
+  }
+}
+
+
+
+
+/* pelajaran item */
+.pelajaran-item{
+    margin: 5px;
+    background-color: rgb(221, 221, 221);
+    font-weight: 500;
+    color: #414141;
+}
+
+/* dropdown */
+.dropdown-item:active , .dropdown-item:focus{
+  background-color: #E9ECEF;
+  color: #3E3E3E;
+}
+.dropdown-menu{
+    border: .3px solid #e6e6e6;
+}
+.dropdown-item{
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+        /* drop animation */
+        @media (min-width: 992px) {
+            .animate {
+              animation-duration: 0.3s;
+              -webkit-animation-duration: 0.3s;
+              animation-fill-mode: both;
+              -webkit-animation-fill-mode: both;
+            }
+          }
+          
+          @keyframes slideIn {
+            0% {
+              transform: translateY(1rem);
+              opacity: 0;
+            }
+            100% {
+              transform:translateY(0rem);
+              opacity: 1;
+            }
+            0% {
+              transform: translateY(1rem);
+              opacity: 0;
+            }
+          }
+          
+          @-webkit-keyframes slideIn {
+            0% {
+              -webkit-transform: transform;
+              -webkit-opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateY(0);
+              -webkit-opacity: 1;
+            }
+            0% {
+              -webkit-transform: translateY(1rem);
+              -webkit-opacity: 0;
+            }
+          }
+          
+          .slideIn {
+            -webkit-animation-name: slideIn;
+            animation-name: slideIn;
+          }
+          
+
+
+/* font color*/
+.font-color-primary{
+  color: #008E6E !important;
+}
+.font-color-secondary{
+  color: #264763;
+}
+.font-color-tertiary{
+  color: #EDB652;
+}
+
+.font-color-1{
+  color: #2E2E2E;
+}
+.font-color-2{
+  color: #3E3E3E;
+}
+.font-color-3{
+  color: #4F4F4F;
+}
+.font-color-4{
+  color: #787878;
+}
+
+
+/* tombol */
+.btn:active , .btn:focus{
+  box-shadow: none;
+}
+
+.btn-1{
+  background-color: #008E6E;
+  color: white;
+}.btn-1:hover{background-color: #03795d; color: white;}
+
+.btn-2{
+  background-color: #d4d4d4;
+}.btn-2:hover{background-color: #b4b4b4;}
+
+.btn-border{
+  background-color: none;
+  border: 1px solid #008E6E;
+}.btn-border:hover{background-color: #008E6E;color: white !important;}
+.btn-text{
+  color: #008E6E;
+}.btn-text:hover{color: #03795d;background-color: none;}
+.btn-link:hover{
+  background-color: #dfe1e4;
+  text-decoration: none;
+}
+.close:hover{
+  color: red;
+}
+.btn-b-white{
+  background-color: #E9ECEF;
+}.btn-b-white:hover{background-color: #dfe1e4;}
+.icon-text{
+  margin: auto 0;
+  display: grid;
+  grid-template-areas: 
+  'icon text notif'
+  ;
+  grid-template-columns:10% 85% 5%;
+}.icon-text span{font-size: 18px;}
+
+
+
+
+
+/* tag pelajaran */
+.p-matimatika{
+  background-color: #FF2F2F;
+  color: white;
+}.p-matimatika:hover{background-color: #da1515; color: white;}
+
+.p-ips{
+  background-color:#FF2F9F;
+  color: white;
+}.p-ips:hover{background-color: #d31c7e; color: white;}
+
+.p-ipa{
+  background-color: #2FFF37;
+  color: white;
+}.p-ipa:hover{background-color: #1bc220; color: white;}
+
+.p-english{
+  background-color: #402FFF;
+  color: white;
+}.p-english:hover{background-color: #2b1ebe; color: white;}
+
+.p-agama{
+  background-color: #2F82FF;
+  color: white;
+}.p-agama:hover{background-color: #1e5ebe; color: white;}
+
+.p-komputer{
+ background-color: #972FFF;
+ color: white; 
+}.p-komputer:hover{background-color: #7618d3; color: white;}
+
+.p-indonesia{
+  background-color: #FF7A2F;
+  color: white;
+}.p-indonesia:hover{background-color: #cf5813; color: white;}
+
+.p-matimatika, .p-komputer , .p-indonesia , .p-agama , .p-english , .p-ipa , .p-ips{
+  letter-spacing: .7px;
+  font-size: 14px;
+}
+
+
+
+/* component kecil */
+.red-notif{
+  height: 10px;
+  width: 10px;
+  border-radius:100% ;
+  background-color: rgb(230, 6, 6);
+  margin: auto 0;
+}
+
+
+
+/* modal */
+.modal-header{
+  border: none;
+}
+.modal-footer{
+  border: none;
+}
+.modal-content{
+  padding: 5px;
+}
+
+
+/* background color */
+.bg-3{
+  background-color: #E9ECEF;
+}
+.bg-4{
+  background-color: #ececec;
+}
+
+
+/* efek */
+.efek-img:hover,.hover-img:active, .hover-img:focus{
+  filter: brightness(73%);
+-webkit-filter: brightness(73%);
+-moz-filter: brightness(73%);
+}

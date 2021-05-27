@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="/material/css/style.css">
+    <link rel="stylesheet" href="material/css/global.css">
+    <!-- my font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Beranda</title>
+</head>
+
+<body>
+
+<!-- 1 NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+    <a href="" class="logo-navbar"><img src="/material/image/logo/privataja.svg" alt="" height="50"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-custom" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link menu-active" href="#">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cari Guru</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Forum</a>
+        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="drop-layanan" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Layanan
+            </a>
+            <div class="dropdown-menu p-2" aria-labelledby="drop-layanan">
+              <div class="btn btn-block text-left btn-b-white">
+                <h5 class="font-color-2 mt-2">Layanan</h5>
+              </div>
+              <a class="dropdown-item mt-2" href="#">Action</a>
+              <a class="dropdown-item mt-2" href="#">Another action</a>
+              <a class="dropdown-item mt-2" href="#">Something else here</a>
+            </div>  
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="drop-pelajaran" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pelajaran
+            </a>
+            <div class="dropdown-menu c-pelajaran-drop animate slideIn p-2" aria-labelledby="drop-pelajaran">
+              <div class="btn btn-block text-left btn-b-white">
+                <h5 class="font-color-2 mt-2">Pelajaran Populer</h5>
+              </div>
+              <div class="pelajaran-drop d-flex flex-wrap p-2">
+              <a class="btn btn-sm pelajaran-item p-matimatika" href="#">Matimatika</a>
+              <a class="btn btn-sm pelajaran-item p-english" href="#">Bahasa Inggris</a>
+              <a class="btn btn-sm pelajaran-item p-agama" href="#">Agama</a>
+              <a class="btn btn-sm pelajaran-item p-indonesia" href="#">Bahasa Indonesia</a>
+              <a class="btn btn-sm pelajaran-item p-komputer" href="#">Komputer</a>
+              <a class="btn btn-sm pelajaran-item p-ips" href="#">IPS</a>
+              <a class="btn btn-sm pelajaran-item p-ipa" href="#">IPA</a>
+            </div>
+            </div>
+        </li>
+      </ul>
+    </div>
+</div>
+                <!-- navbar profil or register -->
+                  <!-- <div class="profil-register">
+                    <a class=" btn-text mr-3" href="#" role="button">Masuk</a>
+                    <a class="btn btn-1" href="#" role="button">Daftar Gratis</a>
+                  </div> -->
+                  <!-- navbar profil -->
+                  <div class="profil-drop dropdown ">
+                  <a class="nav-link  efek-img" href="#" id="drop-profil" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="nav-img-profil" src="/material/image/profil-image/profil-1..png" alt="">
+                  </a>
+                  <div class="dropdown-menu profil-item-drop animate slideIn c-pelajaran-drop" aria-labelledby="drop-profil">
+                    <a class="btn btn-block btn-b-white text-left" href="">
+                    <div class="nama-drop list-drop-profil d-flex align-items-center ">
+                      <div class="nav-foto">
+                        <img class="nav-img-profil" src="/material/image/profil-image/profil-1..png" alt="">
+                      </div>
+                      <div class="nav-nama ml-2">
+                        <span class="font-color-primary ">Selamat Pagi</span>
+                        <h5>Arif hermawan</h5>
+                      </div> 
+                  </div>
+                </a>
+
+                  <button type="button" class="dropdown-item mt-2" data-toggle="modal" data-target="#modal-notif-pesan">
+                    <p class="icon-text"><img src="/material/icon/pesan-icon.svg" alt=""><span class="ml-2">Pesan</span></p>
+                  </button>
+                  <button type="button" class="dropdown-item mt-2" data-toggle="modal" data-target="#modal-notif-pemberitahuan">
+                    <p class="icon-text"><img src="/material/icon/bell.svg" alt=""><span class="ml-2">Pemberitahuan</span><span class="red-notif"></span></p>
+                  </button>
+
+                <div class="dropdown-divider mt-5"></div>
+                <button type="button" class="dropdown-item mt-2">
+                  <p class="icon-text"><img src="/material/icon/log-out.svg" alt=""><span class="ml-2">Keluar</span></p>
+                </button>
+                </div>
+                  
+
+                  </div>
+                  </div>
+         
+
+  </nav>
+
+
+
+<!-- body modal -->
+
+<!-- Modal notif pesan -->
+<div class="modal fade" id="modal-notif-pesan" tabindex="-1" aria-labelledby="modal-notif-pesan" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-3">
+        <h5 class="modal-title icon-text-2" id="modal-notif-pesan">
+          <img src="/material/icon/pesan-icon.svg" alt=""> <span>Pesan</span>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="container-update-notif mt-2">
+        <a class="update-notif" href="">
+            <div class="gambar-notif">
+                <img class="nav-img-profil" src="/material/image/profil-image/profil-2.png" alt="">
+            </div>
+            <div class="text-notif ml-2">
+              <span class="font-color-2">Kathryn Murphy</span><br>
+              <i class="font-color-3">Membalas pesan anda</i>         
+            </div>
+            <div class="waktu">
+            <p class="waktu-notif font-color-4">8 menit</p>
+          </div>
+        </a>
+      </div>
+
+        <div class="container-update-notif mt-2">
+        <a class="update-notif" href="">
+          <div class="gambar-notif">
+              <img class="nav-img-profil" src="/material/image/profil-image/profil-2.png" alt="">
+          </div>
+          <div class="text-notif ml-2">
+            <span class="font-color-2">Kathryn Murphy</span><br>
+            <i class="font-color-3">Mengirim anda pesan</i>         
+          </div>
+          <div class="waktu">
+            <p class="waktu-notif font-color-4">2 jam</p>
+          </div>
+      </a>
+    </div>
+
+    
+      <div class="container-update-notif mt-2">
+        <a class="update-notif" href="">
+        <div class="gambar-notif">
+            <img class="nav-img-profil" src="/material/image/profil-image/profil-2.png" alt="">
+        </div>
+        <div class="text-notif ml-2">
+          <span class="font-color-2">Kathryn Murphy</span> <br>
+          <i class="font-color-3">Mengirim anda pesan</i>          
+        </div>
+        <div class="waktu">
+        <p class="waktu-notif font-color-4">1 hari</p>
+      </div>
+      </a>
+    </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-link btn-block" data-dismiss="modal">Lihat Semuanya</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal notif pemberitahuan -->
+<div class="modal fade" id="modal-notif-pemberitahuan" tabindex="-1" aria-labelledby="modal-notif-pemberitahuan" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-3">
+        <h5 class="modal-title icon-text-2" id="modal-notif-pemberitahuan">
+          <img src="/material/icon/bell.svg" alt=""> <span>Pemberitahuan</span>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-link btn-block" data-dismiss="modal">Lihat Semuanya</button>
+      </div>
+    </div>
+  </div>
+</div>
+     
+
+
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+        <!-- MY JS -->
+        <script src="/material/js/script.js"></script>
+</body>
+
+</html>

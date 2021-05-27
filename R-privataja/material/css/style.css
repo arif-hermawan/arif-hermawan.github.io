@@ -1,0 +1,177 @@
+
+ /* breakpoin
+ 
+ (HANYA) ukuran wi atas 990px
+@media (min-width : 990px){
+
+}
+ Mulai dari 990px => 768
+@media (max-width : 990px){
+
+}
+ Mulai dari 768px => 500
+@media (max-width : 768px){
+
+}
+ Mulai dari 500px => 0px
+@media (max-width : 500px){
+
+}
+
+ */
+
+
+
+
+
+
+
+/* 1 NAVBAR  */
+
+.navbar-custom{
+    font-size: 16px;
+    font-weight: 500;
+}
+.c-pelajaran-drop{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.judul-drop{
+    border-bottom: 1px solid #dbdbdb;
+}
+.profil-drop{
+    position: absolute;
+    top: -1px;
+    right: 30px;
+}
+.profil-item-drop{
+    margin-left: -220px !important;
+    width: 280px;
+    padding: 8px;
+}
+.nav-nama{
+    font-size: 14px;
+}
+
+
+
+
+ /* ========== breakpoint NAVBAR ==========*/
+
+
+ /* (HANYA) ukuran wi atas 990px */
+@media (min-width : 990px){
+    .navbar-nav{
+        margin-left: 80px;
+    }
+    .pelajaran-drop{
+       width: 320px;
+    }
+    /* profil or register */
+       .profil-register{
+           position: absolute;
+           right: 100px;
+           top: 14px;
+       }
+   
+       .item-menu{
+           display: flex;
+           flex-wrap: wrap;
+       }
+}
+ /* Mulai dari 990px => 768 */
+@media (max-width : 990px){
+    .profil-register{
+        position: absolute;
+        right: 20px;
+        top: 10px ;
+    }
+    .item-nav-mobile{
+        margin-top: 20px;
+    }
+    .logo-navbar{
+        display: none;
+    }
+    .c-pelajaran-drop{
+        box-shadow: none !important;
+        
+    }
+    .navbar-custom{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 20px 0;
+    }
+    .nav-img-profil{
+        height: 40px;
+        width: 40px;
+    }
+}
+ /* Mulai dari 768px => 500 */
+@media (max-width : 768px){
+    .profil-drop{
+        top: 0;
+        right: 10px;
+    }
+}
+ /* Mulai dari 500px => 0px */
+@media (max-width : 500px){
+
+}
+
+/* END NAVBAR */
+
+/* 2 modal pemberitahuan dan pesan*/
+.container-update-notif{
+    border-radius: 10px;
+}
+.update-notif{
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.update-notif:hover{
+    text-decoration: none !important;
+    background-color: #E9ECEF;
+}
+.text-notif{
+    margin: auto;
+    
+}
+.text-notif span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.text-notif i{
+    margin-top: auto;
+}
+
+.waktu-notif{
+    font-size: 14px;
+}
+
+
+
+/* 2 JUMBOTRON */
+
+
+
+/* ========== breakpoint NAVBAR ==========*/
+
+
+/* (HANYA) ukuran wi atas 990px */
+@media (min-width : 990px){
+
+}
+ /* Mulai dari 990px => 768 */
+@media (max-width : 990px){
+
+}
+ /* Mulai dari 768px => 500 */
+@media (max-width : 768px){
+
+}
+ /* Mulai dari 500px => 0px */
+@media (max-width : 500px){
+
+}
+
+/* END JUMBOTRON */
